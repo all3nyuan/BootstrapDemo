@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>易租房</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+</head>
+<body>
+<div id="hearder" class="container">
+    <div class="navbar-header">
+        <a class="navbar-brand" herf="index.html" style="font-size: 28px; line-height: 1.8; cursor: pointer;">YiZuFang 易租房</a>
+    </div>
+    <form class="navbar-form navbar-right" role="login" >
+        <a class="navbar-brand" href="#" style="font-size: 16px; line-height: 2;">免费注册</a>
+        <a class="navbar-brand" href="#" style="font-size: 16px; line-height: 2;">用户登录</a>
+    </form>
+</div>
+
+<div id="nav" class="container">
+    <nav class="navbar navbar-inverse " role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" id="mytab">
+                    <li role="presentation" class="active"><a href="index.html">首页</a></li>
+                    <li role="presentation"><a href="">新建房</a></li>
+                    <li role="presentation"><a href="">二手房</a></li>
+                    <li role="presentation"><a href="item.html">房屋展示</a></li>
+                    <li role="presentation"><a href="">房价查询</a></li>
+                    <li role="presentation"><a href="item.html">出租房屋</a></li>
+                    <li role="presentation"><a href="item.html">求租房屋</a></li>
+                    <li role="presentation"><a href="agency.html">联系中介</a></li>
+                    <li role="presentation"><a href="">联系我们</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a herf="#" class="dropdown-toggle" data-toggle="dropdown">更多
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#" role="menuitem" tabindex="-1">房产证</a></li>
+                            <li role="presentation"><a href="#" role="menuitem" tabindex="-1">电子合同</a></li>
+                            <li role="presentation"><a href="#" role="menuitem" tabindex="-1">房产问答</a></li>
+                            <li role="presentation"><a href="#" role="menuitem" tabindex="-1">房产百科</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="search" class="container" style="background-color: #fff">
+    <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="输入关键字搜索" style="width: 350px">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+    </form>
+    <label class="text-center" style="margin-top: 8px">
+        <button  class="btn btn-info" data-toggle="modal" data-target="#myModal">发布租房信息</button>
+        <button  class="btn btn-info" data-toggle="modal" data-target="#myModal">修改/删除信息</button>
+    </label>
+        <div class="modal" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="true">
+                            <span aria-hidden="ture">&times;</span>
+                        </button>
+                        <h3 class="modal-title" id="myModalLabel">请先登录</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h5>注册用户和中介机构才能发布租房信息！</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <a herf=""><button type="button" class="btn btn-primary">去登录</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="select" class="container" style="margin-top: 50px;">
+        <ul id="mytab" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="">全国租房</a></li>
+            <li role="presentation" ><a href="">杭州出租</a></li>
+            <li role="presentation" ><a href="">宁波出租</a></li>
+            <li role="presentation" ><a href="">温州出租</a></li>
+            <li role="presentation" ><a href="">金华出租</a></li>
+            <li role="presentation" ><a href="">丽水出租</a></li>
+            <li role="presentation" ><a href="">优质房源</a></li>
+            <li role="presentation" ><a href="">合租房源</a></li>
+            <li role="presentation" class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">默认排序
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a role="menuitem" tabindex="-1">按发布时间排序</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">按价格从低到高排序</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">按价格从高到低排序</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">按面积从大到小</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">按面积从小到大</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+<div id="content" class="container" style="margin-top: 50px;">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-md-3">
+                <a href="item.html" class="thumbnail">
+                    <img src="images/house1.jpeg">
+                </a>
+            </div>
+            <div>
+                <a href="item.html"><p class="text-right"><H3>大阳台大空间温馨舒适 两居室 干净 随时看 方便住</H3></p></a>
+                <p class="text-right"><h4>整租  |  2室2厅  |  86㎡ |  朝南 </h4></p>
+                <p class="text-right"><h5>城中区-金桥文苑</h5></p>
+                <p class="text-right"><h2 style="color: #ac1a14;">￥1699/月 </h2></p>
+            </div>
+        </div>
+        <hr/>
+        <div class="panel-body">
+            <div class="col-md-3">
+                <a href="item.html" class="thumbnail">
+                    <img src="images/house2.jpg">
+                </a>
+            </div>
+            <div>
+                <a href="item.html"><p class="text-right"><H3>金桥文苑 南北向三居 高楼层 全天采光  6号线 有钥匙</H3></p></a>
+                <p class="text-right"><h4>整租  |  3室2厅  |  167㎡  |  朝南北 </h4></p>
+                <p class="text-right"><h5>城中区-金桥文苑</h5></p>
+                <p class="text-right"><h2 style="color: #ac1a14;">￥1869/月 </h2></p>
+            </div>
+        </div>
+        <hr/>
+        <div class="panel-body">
+            <div class="col-md-3">
+                <a href="item.html" class="thumbnail">
+                    <img src="images/house3.jpg">
+                </a>
+            </div>
+            <div>
+                <a href="item.html"><p class="text-right"><H3>新城国际南北通透两居室、随时看房、带阳台、全齐家具</H3></p></a>
+                <p class="text-right"><h4>整租  |  3室2厅  |  119㎡  |  朝西南 </h4></p>
+                <p class="text-right"><h5>城中区-绿城小区</h5></p>
+                <p class="text-right"><h2 style="color: #ac1a14;">￥2759/月 </h2></p>
+            </div>
+        </div>
+        <hr/>
+        <div class="panel-body">
+            <div class="col-md-3">
+                <a href="item.html" class="thumbnail">
+                    <img src="images/house4.jpg">
+                </a>
+            </div>
+            <div>
+                <a href="item.html"><p class="text-right"><H3>东三环呼家楼口、正规一居室、有钥匙随时看房</H3></p></a>
+                <p class="text-right"><h4>整租  |  3室1厅  |  99㎡  |  朝南 </h4></p>
+                <p class="text-right"><h5>城中区-绿城小区</h5></p>
+                <p class="text-right"><h2 style="color: #ac1a14;">￥1699/月 </h2></p>
+            </div>
+        </div>
+        <hr/>
+        <div class="panel-body">
+            <div class="col-md-3">
+                <a href="item.html" class="thumbnail">
+                    <img src="images/house5.jpeg">
+                </a>
+            </div>
+            <div>
+                <a href="item.html"><p class="text-right"><H3>上海沙龙 邻经开大厦 南北通透 照片装修 随时起租 两居室</H3></p></a>
+                <p class="text-right"><h4>整租  |  2室1厅  |  89㎡  |  朝南 </h4></p>
+                <p class="text-right"><h5>城中区-莲都小区</h5></p>
+                <p class="text-right"><h2 style="color: #ac1a14;">￥1599/月 </h2></p>
+            </div>
+        </div>
+        <hr/>
+        <div class="panel-body">
+            <div class="col-md-3">
+                <a href="item.html" class="thumbnail">
+                    <img src="images/house6.jpg">
+                </a>
+            </div>
+            <div>
+                <a href="item.html"><p class="text-right"><H3>新出钥匙房+东南北通透+户型采光好+视野宽阔+家电齐全+交通便利</H3></p></a>
+                <p class="text-right"><h4>整租  |  3室2厅  |  119㎡  |  朝西南 </h4></p>
+                <p class="text-right"><h5>城中区-莲都小区</h5></p>
+                <p class="text-right"><h2 style="color: #ac1a14;">￥2999/月</h2></p>
+            </div>
+        </div>
+        <hr/>
+        <div class="panel-body">
+            <div class="col-md-3">
+                <a href="item.html" class="thumbnail">
+                    <img src="images/house7.jpg">
+                </a>
+            </div>
+            <div>
+                <a href="item.html"><p class="text-right"><H3>次顶层,双卧室朝南三居室,带车位,南北通透,看房随时</H3></p></a>
+                <p class="text-right"><h4>整租  |  3室1厅  |  99㎡  |  朝东 </h4></p>
+                <p class="text-right"><h5>城中区-莲都小区</h5></p>
+                <p class="text-right"><h2 style="color: #ac1a14;">￥1899/月</h2></p>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <nav>
+                <ul class="pager">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">上一页</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">下一页</a></li>
+                    <li><a href="#">尾页</a></li>
+                    <span>共19页</span>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="container">
+    <nav class="navbar navbar-default navbar-bottom">
+        <div class="navbar-inner navbar-content-center">
+            <p class="text-muted credit text-center" style="padding: 10px;">
+                关于我们 | 网站合作 | 联系我们 | 招聘信息 | 各地租房 | 网站地图 | 意见反馈 | 后台管理 | 开放平台 | 服务声明 | 联系管理员
+            </p>
+            <p class="text-muted credit text-center">
+                Copyright © 2017 2017 第十二小组-网上租房系统
+                YiZuFang 易租房  版权所有
+            </p>
+        </div>
+    </nav>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        var p=0, t=0;
+        $(window).scroll(function(e){
+            p = $(this).scrollTop();
+            if (t>p) {
+                $("#search").removeClass("navbar navbar-fixed-top");
+            }
+            else if(t<p) {
+                $("#search").addClass("navbar navbar-fixed-top");
+            }
+            if(p==0){
+                $("#search").removeClass("navbar navbar-fixed-top");
+            }
+            setTimeout(function(){t=p},1);
+        })
+    })
+</script>
+
+</body>
+</html>
